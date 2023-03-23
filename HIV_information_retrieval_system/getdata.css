@@ -1,0 +1,15 @@
+table{
+    border: 6px;
+    border-color: lightgreen;
+}
+.data{
+    max-width: 800px;
+    margin-left: 500px;
+}
+
+.data th{
+    background-color: lightslategray ;
+}
+.data td{
+    background-color: lightgreen;
+}

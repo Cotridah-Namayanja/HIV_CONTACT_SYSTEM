@@ -1,0 +1,185 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient registration</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="header">
+        <div class="left_header">
+            <img src="images/hiv.jfif" alt="">
+            <h2>HIVnet</h2>
+            </div>
+            <div class="middle-header">
+                <center><h2> HIV INFORMATION RETRIEVAL SYSTEM</h2></center>
+
+            </div>
+
+        <div class="right_header">
+            <a href="Home.html">Home</a>
+        
+            <a href="#" class="active">Register</a>
+        
+            <a href="retrieve.php">Retrieve</a>
+            
+        </div>
+    </div>
+    <hr>
+    <br><br><br><br><br>
+    <center><h2>PATIENT REGISTRATION</h2></center>
+    <br>
+    
+    <div class="form">
+        
+        <div class="form1">
+            
+            <div class="form-left"></div>
+        <form action="register.php" method="post" id="msform" name="register" onsubmit="return validateForm()">
+        
+        <div class="input-field">
+        <label for="Patient_ID">Patient ID</label>
+        <br>
+        <input type="ID" name="Patient_ID"  placeholder="Enter patient ID" required>
+        </div>
+        <br><br>
+        <div class="input-field">
+        <label for="First_Name">First Name</label>
+        <br>
+        <input type="text" name="First_Name" placeholder="Enter First Name" required>
+        </div>
+        <br><br>
+        <div class="input-field">
+        <label for="Last_Name">Last Name</label>
+        <br>
+        <input type="text" name="Last_Name" placeholder="Enter Last Name" required>
+        </div>
+        <br><br>
+        <div class="input-field">
+        <label for="DOB">Date of Birth</label>
+        <br>
+        <input type="date" name="DOB" placeholder="Input Date of Birth" required>
+        </div>
+        <br><br>
+        <div class="input-field">
+        <label for="Place_of_Birth">Place of Birth</label>
+        <br>
+        <input type="text" name="Place_of_Birth" placeholder="Enter your place of birth" required>
+        </div>
+        <br><br>
+        <div class="input-field">
+        <label for="Place_of_Residence">Place of residence</label>
+        <br>
+        <input type="text" name="Place_of_Residence" placeholder="Patient's place of residence" required>
+        </div>
+        <br><br>
+        <div class="input-field">
+        <label for="Gender">Gender</label>
+        <select name="Gender" id="">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        </div>
+        
+        <br><br>
+        <div class="input-field">
+        <label for="Date_of_HIV_Diagnosis">Date of HIV Diagnosis</label>
+        <br>
+        <input type="date" name="Date_of_HIV_Diagnosis" placeholder="Input Date of HIV DIadnosis" required>
+        </div>
+        <br><br>
+        
+</div>
+<div class="form-right">
+    <div class="input-field">
+        <label for="Marital_status">Marital Status</label>
+        <select name="Marital_status">
+        <option value="Single">Single</option>
+        <option value="Married">Married</option>
+        <option value="Devorced">Devorced</option>
+    </select>
+    </div>
+    <br><br>
+    <div class="input-field">
+    <label for="Occupation">Occupation</label>
+    <br>
+        <input type="text" name="Occupation" placeholder="Patient's Occupation" required>
+        </div>
+        <br><br>
+        <div class="input-field">
+        <label for="Contact">Contact</label>
+        <br>
+        <input type="text" name="Contact" placeholder="Patient's Contact " required>
+        
+        <br><br>
+        <div class="input-field">
+        <label for="CDR_count">CD4 Count</label>
+        <br>
+        <input type="number" name="CDR_count" placeholder="CD4 Count" required>
+        </div>
+        <br><br>
+        <div class="input-field">
+        <label for="viral_load">viral Load</label>
+        <br>
+        <input type="text" name="viral_load"placeholder="Viral Load" required>
+        </div>
+        <br><br>
+        <div class="input-field">
+        <label for="ART_Regimen">ART Regimen</label>
+        <br>
+        <input type="text" name="ART_Regimen" placeholder="ART Regimen" required>
+        </div>
+        <br><br>
+        <div class="input-field">
+        <label for="NoK">Next of Kin</label>
+        <br>
+        <input type="text" name="NoK" placeholder="Patient's Next of Kin" required>
+        </div>
+        <br><br>
+        <div class="input-field">
+        <label for="NokContact">Next of Kin Contact</label>
+        <br>
+        <input type="text" name="NokContact" placeholder="Patient's Next of Kin Contact" required>
+        </div>
+        <br><br>
+        <center> <button type="submit">Register</button></center>
+    </div>
+        
+    </div>
+        <div class="button">
+       <!--<center> <input type="submit" value="Register"></center>-->
+      
+        </div>
+        </form>
+    </div>
+    </div>
+    <br><br><br>
+    <div class="footer">
+        <div class="footer-left">
+            <img src="images/hiv.jfif" alt="">
+            <h3>HIVnet</h3>
+
+        </div>
+        <div class="footer-middle">
+            <img src="images/UN-removebg-preview.png" alt="UN logo">
+            <img src="images/mhealth-removebg-preview.png" alt="MoH logo">
+            <img src="images/taso-removebg-preview.png" alt="TASO logo">
+            <img src="images/who-removebg-preview.png" alt="WHO logo">
+            
+
+        </div>
+        <div class="footer-right">
+            <h4>Quick links</h4>
+            <hr>
+            <a href="Home.html">Back_Home</a>
+            <a href="register.html">New_Patient</a>
+            <a href="retrieve.php">Patient_Information</a>
+
+        </div>
+    </div>
+</html>
